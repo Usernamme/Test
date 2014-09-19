@@ -1,10 +1,13 @@
-import math
+def quit_trigger(numlimit,  a, b):
+    if b >= numlimit > 0:
+        return True
 
-def fibs(numlimit, limit): #numlimit - highest number generated, limit - number of numbers generated
+def fibs(numlimit, limit): #numlimit - highest number generated - use 0 for no numlimit | limit - number of numbers generated
     a = 1
     b = 1
-    
-    while True:
+    for x in range(1, limit):
         a += b
         b += a
-        
+        if quit_trigger(numlimit, a, b):
+            return (a, b)
+    return (a, b)
