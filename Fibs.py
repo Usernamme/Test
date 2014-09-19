@@ -13,7 +13,7 @@ def fibs(numlimit, limit):
     for x in range(1, limit):
         a += b
         b += a
-        fibs.extend([a,b])
+        fibonacci.extend([a,b])
         if quit_trigger(numlimit, a, b):
             return fibonacci
     return fibonacci
