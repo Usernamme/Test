@@ -4,9 +4,9 @@ def isprime(x):
             return False
     else:
         return True
-primes = []
 
 def primecalc(upperlimit):
+    primes = []
     for x in range(2,upperlimit):
         if isprime(x):
             primes.append(int(x))
