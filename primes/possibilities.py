@@ -4,3 +4,4 @@ for data in possibilities:
     my_file.write("%s\n" % str(data))
 my_file.close()
 
+#requires possibilities.txt in the same folder
