@@ -1,3 +1,3 @@
 Test
 ====
-Pontless things
+Pointless things
